@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap Practice</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<!--Latest minified CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" type="text/css" href="style/index-style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+			<h1>Bootstrap practice </h1>
+			<h4>Practicing messing around with Bootstrap. This is a jumbotron.</h4>
+			</div>
+			<p>A short demo of commonly used elements.</p>
+			<div class="page-header">
+				<p>The class <code>page-header</code> will add a line underneath the section.</p>
+			</div>
+			<h1>This is a title <small>C'est un titre</small></h1>
+			<p>This text is inside a p tag, which is inside a <code>container</code>, which is fixed-width depending on the screen size. It also contains some <mark>highlighted</mark> text.</p>
+			<p>The alternate class to the <code>container</code> is <code>container-fluid</code>, which is a fluid-container. The fluid-container expands to fill the width of the entire viewport. Highlighted text is made with the <code>mark</code> tag. These code looking things are made with the <code>code</code> tag.
+			</p>
+			<h2>Big block of code <small>Grand bloc de code</small></h2>
+			<p>The <code>pre</code> tag for multi-line code is great for code snippets, because it preserves line breaks that you write in the HTML file.</p>
+			<pre>/* this is a block comment */
+console.log("hello world");
+alert("Interruption")</pre>
+			<h2>Colours! <small>Couleurs!</small></h2>
+			<p class="text-muted">This is muted text. Its class is <code>text-muted</code>. It's a light grey.<p>
+			<p class="text-primary">This is important text. Its class is <code>text-primary</code>. It's light blue.</p>
+			<p class="text-success">This is success text. Its class is <code>text-success</code>. It's green.</p>
+			<p class="text-info">This is information text. Its class is <code>text-info</code>. It's blue.</p>
+			<p class="text-warning">This is warning text. Its class is <code>text-warning</code>. It's yellow.</p>
+			<p class="text-danger">This is danger text. Its class is <code>text-danger</code>. It's red.</p>
+			<p>There are also similar colours for background colours instead of text. The names are the same too, except the prefix <code>bg-</code>, instead of <code>text-</code>, and <code>bg-muted</code> does <em>not</em> exist.<p>For reference it is:</p>
+			<ul><code><li>bg-primary</li><li>bg-success</li><li>bg-info</li><li>bg-warning</li><li>bg-danger</li></code></ul>
+			<h2>Tables <small>Tables</small></h2>
+			<p>The table below has a more modern look than the default HTML style.</p>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>School Name</th>
+						<th>Number of undergraduate students (2017)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>UofT Scarborough</td>
+						<td>12,693</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>UofT St. George</td>
+						<td>43,375</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>UofT Mississauga</td>
+						<td>14,073</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>University of Waterloo</td>
+						<td>30,600</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Ryerson University</td>
+						<td>37,000</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h2>Tables with pictures <small>Tables avec les photos</small></h2>
+			<table class="table table-striped">
+				<tbody>
+					<tr>
+						<td><img class="img-responsive computer-drawing" src="images/computer-drawing.png"></img><p>A computer</p></td>
+						<td>A drawing of a desktop computer.</td>
+					</tr>
+					<tr>
+						<td><img class="img-responsive computer-drawing" src="images/computer-drawing.png"></img><p>A computer</p></td>
+						<td>A drawing of a desktop computer.</td>
+					</tr>
+					<tr>
+						<td><img class="img-responsive computer-drawing" src="images/computer-drawing.png"></img><p>A computer</p></td>
+						<td>A drawing of a desktop computer.</td>
+					</tr>
+				</tbody>
+			<table>
+			
+			<p>There are many ways to style tables. The one used above has class <code>table table-striped</code>. Available options are:</p>
+			<ul>
+			<li><code>table</code> Basic table styling.</li>
+			<li><code>table-striped</code> Adds alternating stripes of light and dark between rows.</li>
+			<li><code>table-bordered</code>Adds borders to all of the cells of the table and the sides.</li>
+			<li><code>table-hover</code>Adds a light grey highlight on rows when you hover over them with a mouse.</li>
+			<li><code>table-condensed</code>Makes a more compact table with less cell padding.</li>
+			<li><code>table-responsive</code>Creates a responsive table, which will add a horizontal scrollbar on devices with &lt; 768px wide.</li>
+			<li>Extra: contextual-classes. Like text and background colours, the following context classes can be set as the class of tr or th elements.
+			<ul>
+				<li><code>active</code> - light grey</li>
+				<li><code>success</code> - green</li>
+				<li><code>info</code> - blue</li>
+				<li><code>warning</code> - yellow</li>
+				<li><code>danger</code> - red</li>
+			</ul></li>
+			</ul>
+			<h2>Responsive images <small>Images adaptatifs</small></h2>
+			<p>Responsive images are images that will fill out a small screen, but will not go off screen.
+			<img class="img-responsive" src="images/computer-drawing.png"></img>
+			
+			<h2>Wells <small>Puits</small></h2>
+			<div class="well">
+				<p>The <code>well</code> class puts contents in a grey sunken-in looking box.</p>
+			</div>
+			
+			<h2>Alerts <small>Alertes</small></h2>
+			<div class="alert alert-success">
+				<p>Success! You've made it this far into the page. This div has class <code>alert alert-success</code>. More on <a href="https://www.w3schools.com/bootstrap/bootstrap_alerts.asp" class="alert-link">this page</a>. That link also has class <code>alert-link</code> to match the colour of the alert div its in.
+			</div>
+				
+			<h2>Buttons <small>Boutons</small></h2>
+			<button type="button" class="btn" onclick="alert('you clicked a bootstrap primary button');">Primary button </button>
+			<button type="button" class="btn btn-info" onclick="alert('you clicked a bootstrap info button')">Info button</button>
+			<p>Class is used on the button tag, with the class <code>btn</code>. There is also <code>btn btn-primary</code> with the same colours like the text colours. More info <a href="https://www.w3schools.com/bootstrap/bootstrap_buttons.asp">here</a>. <a href="https://www.w3schools.com/bootstrap/bootstrap_button_groups.asp">Link for button-groups</a>
+			</p>
+			
+			<h2>Inline Styling</h2>
+			<div class="alert alert-info">
+				<p>The next few examples look at inline styling.</p>
+			</div>
+			
+			<h3>Glyphicons</h3>
+			<p>Glyphicons are commonly used in UIs. These classes are usually applied to <code>&lt;span&gt;</code> elements</p>
+			<p>Example of Film: <span class="glyphicon glyphicon-film"></span></p>
+			<p>Class used: <code>glyphicon glyphicon-film</code>
+			
+			<h3>Badges <small>Badges </small><span class="badge">1</span></h3>
+			<p>Badges are small numbers that are often used to show notifications. They are inline elements. Hint: a useful place to put it is inside a button.</p>
+			<p>span class: <code>badge</code>
+			
+			<h2>Block quotes <small>Citations de blocs</small></h2>
+			<blockquote>
+				Some <abbr title="providing or showing creative or spiritual inspiration.">inspirational quote</abbr>, by some inspirational person.
+				<footer>Inspirational Person</footer>
+			</blockquote>
+			<p>Hey you made it to the end! Press <kbd>ALT + F4</kbd> to close.</p>
+		</div>
+	</body>
+</html>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
