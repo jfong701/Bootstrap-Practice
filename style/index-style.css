@@ -5,5 +5,11 @@
 }
 			
 .computer-drawing {
-	height: 200px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centered-text {
+	text-align: center;
 }
